@@ -15,7 +15,7 @@ def analyze_link(text):
     url = link_result[0].url
 
     # Analyze the URL
-    API_KEY = 'tU3tyzHlLs3I9dw81P3l2jthJMb6scyJ'
+    API_KEY = ''
     encoded_url = urllib.parse.quote(url, safe='')
     api_url = f"https://ipqualityscore.com/api/json/url/{API_KEY}/"
     response = requests.get(api_url + encoded_url)
